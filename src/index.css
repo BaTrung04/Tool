@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.section-content {
+  @apply w-[1500px] max-w-full mx-auto ;
+}
+
+@layer components {
+  .primary-btn {
+    @apply bg-primary text-white  py-[5px] px-[10px] rounded-lg shadow-sm hover:shadow-md hover:bg-violet-400;
+  }
+  .shadow-top {
+    @apply shadow-none; /* Tắt shadow mặc định của Tailwind */
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 -2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+}
